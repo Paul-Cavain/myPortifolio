@@ -24,9 +24,9 @@ const Skills = () => {
         <div className="flex flex-col">
           <div className="mt-4">
             <a href="https://www.w3schools.com/html/">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaHtml5 className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   Html5
                 </span>
               </div>
@@ -35,9 +35,9 @@ const Skills = () => {
 
           <div className="mt-4">
             <a href="https://www.w3schools.com/css/">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaCss3 className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   CSS
                 </span>
               </div>
@@ -46,9 +46,9 @@ const Skills = () => {
 
           <div className="mt-4">
             <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaBootstrap className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   Bootstrap
                 </span>
               </div>
@@ -59,9 +59,9 @@ const Skills = () => {
         <div className="flex flex-col">
           <div className="mt-4">
             <a href="https://tailwindcss.com/">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaCss3Alt className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   TailwindCss
                 </span>
               </div>
@@ -69,9 +69,9 @@ const Skills = () => {
           </div>
           <div className="mt-4">
             <a href="https://www.w3schools.com/git/">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaGit className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   Git
                 </span>
               </div>
@@ -79,9 +79,9 @@ const Skills = () => {
           </div>
           <div className="mt-4">
             <a href="https://www.javascript.com/">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaJs className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   JavaScript
                 </span>
               </div>
@@ -93,9 +93,9 @@ const Skills = () => {
           <div className="flex flex-col">
             <div className="mt-4">
               <a href="https://react.dev/">
-                <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+                <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                   <FaReact className="text-3xl mt-1" />
-                  <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                  <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                     React
                   </span>
                 </div>
@@ -103,9 +103,9 @@ const Skills = () => {
             </div>
             <div className="mt-4">
               <a href="https://nodejs.org/en">
-                <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+                <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                   <FaNodeJs className="text-3xl mt-1" />
-                  <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                  <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                     NodeJs
                   </span>
                 </div>
@@ -113,9 +113,9 @@ const Skills = () => {
             </div>
             <div className="mt-4">
               <a href="https://flutter.dev/">
-                <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+                <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                   <FaAndroid className="text-3xl mt-1" />
-                  <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                  <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                     Flutter
                   </span>
                 </div>
@@ -127,9 +127,9 @@ const Skills = () => {
         <div className="flex flex-col">
           <div className="mt-4">
             <a href="https://www.figma.com/">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaFigma className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   Figma
                 </span>
               </div>
@@ -137,9 +137,9 @@ const Skills = () => {
           </div>
           <div className="mt-4">
             <a href="https://flutter.dev/">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaAndroid className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   Flutter
                 </span>
               </div>
@@ -147,9 +147,9 @@ const Skills = () => {
           </div>
           <div className="mt-4">
             <a href="https://www.api.org/ ">
-              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black hover:border-2 hover:border-red-500">
                 <FaLink className="text-3xl mt-1" />
-                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md">
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
                   API's
                 </span>
               </div>

@@ -52,15 +52,6 @@ const MobileNav = () => {
                 About Me
               </li>
             </a>
-            <a href="/Testimonies">
-              <li
-                onClick={() => stMenuOpen(false)}
-                className="py-4 cursor-pointer"
-              >
-                Testimonies
-              </li>
-            </a>
-
             <a href="/Works">
               <li
                 onClick={() => stMenuOpen(false)}

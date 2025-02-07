@@ -8,10 +8,18 @@ const Navbar = () => {
 
   return (
     <section>
-      <nav className="fixed top-0 left-0 z-10 right-0 flex flex-row justify-between px-4 md:px-28 bg-white py-6 shadow-md md:shadow-sm">
+      <nav className="fixed top-0 left-0 z-10 right-0 flex flex-row justify-between px-4 md:px-24 bg-white py-6 shadow-md md:shadow-sm">
         <div className="text-xl md:text-xl">
           <a href="/">
-            <h1 className="font-light">PauloNkelego</h1>
+            <h1
+              className={`transition ease-linear duration-500 p-2.5 rounded ${
+                activeLink === "/"
+                  ? "text-red-500 font-light"
+                  : "hover:bg-white hover:text-black font-light"
+              }`}
+            >
+              PauloNkelego
+            </h1>
           </a>
         </div>
 
@@ -37,17 +45,6 @@ const Navbar = () => {
                 }`}
               >
                 Works
-              </li>
-            </a>
-            <a href="/Testimonies">
-              <li
-                className={`transition ease-linear duration-500 p-2.5 rounded ${
-                  activeLink === "/Testimonies"
-                    ? "text-red-500"
-                    : "hover:bg-white hover:text-black"
-                }`}
-              >
-                Testimonies
               </li>
             </a>
             <a href="/Contacts">

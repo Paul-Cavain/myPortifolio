@@ -1,30 +1,15 @@
-import React, { useRef } from "react";
+import React from "react";
 import resume from "../../resume.pdf";
-
+import ArrowScroll from "./ArrowScroll";
 import {
   FaTwitter,
   FaGithub,
   FaLinkedin,
   FaDribbble,
-  FaArrowUp,
   FaClock,
 } from "react-icons/fa";
 
 const Home = () => {
-  const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const arrowRef = useRef(null);
-
-  const handleClick = () => {
-    handleScrollToTop();
-    arrowRef.current.blur();
-  };
-
   return (
     <>
       <div className="home w-full px-4 md:px-28 pb-32 md:pb-36">
@@ -48,34 +33,31 @@ const Home = () => {
                 </p>
               </div>
               {/* Social Icons */}
-              <div className="text-black mt-12 md:mt-8 flex justify-center md:justify-start text-2xl space-x-2">
-                <a href="https://twitter.com/Cavain_tz">
-                  <FaTwitter
-                    className="hover:text-black hover:ring-2 hover:ring-black rounded-full p-1"
+              <div className="text-black mt-12 md:mt-8 flex justify-center md:justify-start text-2xl space-x-6">
+                <a href="https://github.com/Paul-Cavain">
+                  <FaGithub
+                    className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10"
                     size={35}
                   />
                 </a>
-                <a href="https://github.com/Paul-Cavain">
-                  <FaGithub
-                    className="hover:text-black hover:ring-2 hover:ring-black rounded-full p-1"
-                    size={35}
-                  />
+                <a href="https://twitter.com/Cavain_tz">
+                  <FaTwitter className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10" />
                 </a>
                 <a href="https://dribbble.com/cavaincodez">
                   <FaDribbble
-                    className="hover:text-black hover:ring-2 hover:ring-black rounded-full p-1"
+                    className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10"
                     size={35}
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/paul-cavain-7511b5304/">
                   <FaLinkedin
-                    className="hover:text-black hover:ring-2 hover:ring-black rounded-full p-1"
+                    className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10"
                     size={35}
                   />
                 </a>
                 <a href="https://wakatime.com/@CavainCoder">
                   <FaClock
-                    className="hover:text-black hover:ring-2 hover:ring-black rounded-full p-1"
+                    className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10"
                     size={35}
                   />
                 </a>
@@ -87,7 +69,7 @@ const Home = () => {
                   <button
                     type="button"
                     name="download_cv"
-                    className="text-white bg-black h-12 w-32 rounded-md mt-9 md:mt-8 transition ease-out duration-500 hover:bg-white hover:text-black hover:border-2 hover:border-black"
+                    className="text-white bg-black h-12 w-32 rounded-md mt-9 md:mt-8 transition ease-out duration-500 hover:bg-white hover:text-black hover:border-2 hover:border-red-500"
                   >
                     Download CV
                   </button>
@@ -121,7 +103,7 @@ const Home = () => {
               <button
                 type="button"
                 name="submit"
-                className="w-32 h-12 mt-6 rounded-md text-white bg-black transition ease-out duration-500 hover:bg-white hover:text-black hover:border-2 hover:border-black hover:text-semibold"
+                className="w-32 h-12 mt-6 rounded-md text-white bg-black transition ease-out duration-500 hover:bg-white hover:text-black hover:border-2 hover:border-red-500 hover:text-semibold"
               >
                 Let's Talk
               </button>
@@ -130,13 +112,7 @@ const Home = () => {
         </div>
 
         {/* Fixed Scroll-to-Top Arrow */}
-        <div
-          ref={arrowRef}
-          className="fixed bottom-16 right-4 md:right-20 cursor-pointer text-xl text-white bg-black rounded-full p-2 shadow hover:ring-2 hover:ring-black hover:bg-white hover:text-black"
-          onClick={handleClick}
-        >
-          <FaArrowUp />
-        </div>
+        <ArrowScroll />
       </div>
     </>
   );
