@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="b-red-500 w-full px-10 py-10 rounded-r-md">
+    <div className="b-red-500 w-full px-2 md:px-10 py-10 rounded-r-md">
       <form className="space-y-3">
         <div className="relative z-0 w-full mb-6 group">
           <input
