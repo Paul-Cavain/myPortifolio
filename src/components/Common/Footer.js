@@ -1,41 +1,54 @@
+import { BsDribbble, BsStopwatch } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <>
-      <footer className="fixed bottom-0 right-0 left-0 flex flex-row justify-between px-4 md:px-28 bg-gray-200 h-14 pt-4">
+      <footer className="md:fixed bottom-0 right-0 left-0 flex flex-col md:flex-row justify-center md:justify-between items-center px-4 md:px-28 bg-gray-200 py-6 pt-4">
         <div className="md:flex hidden">
-          <h2>paulcavain02@gmail.com</h2>
+          <h2>All right reserved &copy; PauloNkelego</h2>
         </div>
         <div>
-          <ul className="flex flex-row space-x-3 md:space-x-4">
+          <ul className="flex flex-row justify-center items-center space-x-3 md:space-x-4">
             <a
               href="https://twitter.com/Cavain_tz"
-              className="hover:text-violet-700"
+              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
             >
-              <li>Twitter</li>
+              <li>
+                <FaTwitter />
+              </li>
             </a>
             <a
               href="https://github.com/Paul-Cavain"
-              className="hover:text-violet-700"
+              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
             >
-              <li>GitHub</li>
+              <li>
+                <FaGithub />
+              </li>
             </a>
             <a
               href="https://dribbble.com/cavaincodez"
-              className="hover:text-violet-700"
+              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
             >
-              <li>Dribble</li>
+              <li>
+                <BsDribbble />
+              </li>
             </a>
             <a
               href="https://www.linkedin.com/in/paul-cavain-7511b5304/"
-              className="hover:text-violet-700"
+              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
             >
-              <li>Linkedin</li>
+              <li>
+                <FaLinkedinIn />
+              </li>
             </a>
             <a
               href="https://wakatime.com/@CavainCoder"
-              className="hover:text-violet-700"
+              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
             >
-              <li>WakaTime</li>
+              <li>
+                <BsStopwatch />
+              </li>
             </a>
           </ul>
         </div>

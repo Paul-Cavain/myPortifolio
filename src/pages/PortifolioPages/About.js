@@ -1,26 +1,11 @@
 import Footer from "../../components/Common/Footer";
 import Navbar from "../../components/Common/Navbar";
-import React, { useRef } from "react";
-import { FaArrowUp } from "react-icons/fa";
 import Skills from "../PortifolioPages/Skills";
 import Services from "../PortifolioPages/Services";
 import Profile from "./Profile";
+import ArrowScroll from "./ArrowScroll";
 
-const About = () => {
-  const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const arrowRef = useRef(null);
-
-  const handleClick = () => {
-    handleScrollToTop();
-    arrowRef.current.blur();
-  };
-
+const About = ({ projects }) => {
   return (
     <div>
       <div>
@@ -34,7 +19,7 @@ const About = () => {
         </div>
 
         {/* about my profile */}
-        <Profile />
+        <Profile projects={projects} />
 
         {/* Skills Section */}
         <Skills />
@@ -43,13 +28,7 @@ const About = () => {
         <Services />
 
         {/* Scroll-to-Top Arrow */}
-        <div
-          ref={arrowRef}
-          className="fixed bottom-16 right-10 cursor-pointer text-xl text-white bg-black rounded-full p-2 shadow hover:ring-2 hover:ring-black hover:bg-white hover:text-black"
-          onClick={handleClick}
-        >
-          <FaArrowUp />
-        </div>
+        <ArrowScroll />
       </div>
 
       <div>

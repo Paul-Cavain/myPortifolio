@@ -9,7 +9,7 @@ const Services = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-center md:space-x-4 space-y-4 md:space-y-0 md:mt-10">
-        <div className="relative bg-black py-16 mt-4 md:mt-0 w-full rounded-md text-white transform transition-transform hover:translate-x-1 card">
+        <div className="relative bg-black py-16 mt-4 md:mt-0 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:border-2 hover:border-red-500 transition-all duration-700 ease-out">
           <div className="front-content">
             <div className="flex justify-center">
               <FaFigma className="text-3xl" />
@@ -18,7 +18,7 @@ const Services = () => {
               <h3>System Design</h3>
             </div>
           </div>
-          <div className="hover-content absolute top-0 left-0 w-full h-full bg-opacity-80 bg-black text-white p-4 opacity-0 transition-opacity duration-300">
+          <div className="hover-content absolute top-0 left-0 w-full h-full bg-opacity-80 hover:text-black text-white p-4 opacity-0 transition-opacity duration-300">
             {/* New content to be displayed on hover */}
             <h3 className="text-xl">Special Design Offer</h3>
             <p className="mt-4">
@@ -27,7 +27,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="relative bg-black py-16 mt-16 w-full rounded-md text-white transform transition-transform hover:translate-x-1 card">
+        <div className="relative bg-black py-16 mt-16 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:border-2 hover:border-red-500 transition-all duration-700 ease-out">
           <div className="front-content">
             <div className="flex justify-center">
               <FaReact className="text-3xl" />
@@ -36,7 +36,7 @@ const Services = () => {
               <h3>Web Development</h3>
             </div>
           </div>
-          <div className="hover-content absolute top-0 left-0 w-full h-full bg-opacity-80 bg-black text-white p-4 opacity-0 transition-opacity duration-300">
+          <div className="hover-content absolute top-0 left-0 w-full h-full bg-opacity-80 hover:text-black text-white p-4 opacity-0 transition-opacity duration-300">
             {/* New content to be displayed on hover */}
             <h3 className="text-xl">Awesome UI/UX</h3>
             <p className="mt-4">
@@ -46,7 +46,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="relative bg-black py-16 mt-16 w-full rounded-md text-white transform transition-transform hover:translate-x-1 card">
+        <div className="relative bg-black py-16 mt-16 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:border-2 hover:border-red-500 transition-all duration-700 ease-out">
           <div className="front-content">
             <div className="flex justify-center">
               <FaMobile className="text-2xl" />
@@ -55,7 +55,7 @@ const Services = () => {
               <h3>Mobile App Development</h3>
             </div>
           </div>
-          <div className="hover-content absolute top-0 left-0 w-full h-full bg-opacity-80 bg-black text-white p-4 opacity-0 transition-opacity duration-300">
+          <div className="hover-content absolute top-0 left-0 w-full h-full bg-opacity-80 hover:text-black text-white p-4 opacity-0 transition-opacity duration-300">
             {/* New content to be displayed on hover */}
             <h3 className="text-xl">A Lightweight mobile application</h3>
             <p className="mt-4">

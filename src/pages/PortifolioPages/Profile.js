@@ -1,7 +1,7 @@
-import { FaLightbulb, FaGifts, FaHeadphones } from "react-icons/fa";
+import { FaLightbulb, FaProjectDiagram, FaHandsHelping } from "react-icons/fa";
 import resume from "../../resume.pdf";
 
-const Profile = () => {
+const Profile = ({ projects }) => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center md:gap-20 pt-8 md:pt-20 px-6 md:px-0">
       {/* Profile Image */}
@@ -25,17 +25,17 @@ const Profile = () => {
             </div>
           </div>
           <div className="bg-black flex-1 px-8 py-6 rounded-md text-center">
-            <FaGifts className="text-4xl text-white mx-auto" />
+            <FaProjectDiagram className="text-4xl text-white mx-auto" />
             <div className="mt-2 text-white">
               <p className="text-xl font-semibold">Complete</p>
-              <p>4+</p>
+              <p>{projects.length}+ Projects</p>
             </div>
           </div>
           <div className="bg-black flex-1 px-8 py-6 rounded-md text-center">
-            <FaHeadphones className="text-4xl text-white mx-auto" />
+            <FaHandsHelping className="text-4xl text-white mx-auto" />
             <div className="mt-2 text-white">
               <p className="text-xl font-semibold">Support</p>
-              <p>9+</p>
+              <p>9+ Projects</p>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Profile = () => {
               <button
                 type="button"
                 name="download_cv"
-                className="text-white bg-black h-12 w-40 rounded-md transition duration-300 hover:bg-white hover:text-black hover:border-2 hover:border-black"
+                className="text-white bg-black h-12 w-40 rounded-md transition duration-300 hover:bg-white hover:text-black hover:border-2 hover:border-red-500"
               >
                 Download CV
               </button>
