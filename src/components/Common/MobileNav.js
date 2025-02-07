@@ -16,13 +16,13 @@ const MobileNav = () => {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+            ? "fixed left-0 top-0 w-[70%] sm:hidden h-screen bg-[#ecf0f3] p-10 transition-all ease-out duration-500"
+            : "fixed left-[-100%] top-0 p-10 transition-all ease-out duration-500 h-screen"
         }
       >
-        <div className="flex flex-row space-x-8 w-full justify-between">
+        <div className="flex flex-row space-x-6 w-full justify-between">
           <div>
-            <h3 className="text-2xl font-bold">PauloNkelego</h3>
+            <h3 className="text-lg font-light">PauloNkelego</h3>
           </div>
           <div
             onClick={handleNav}
@@ -71,6 +71,12 @@ const MobileNav = () => {
           </ul>
         </div>
         <hr className="mt-3" />
+
+        <div className="fixed bottom-2 text-center">
+          <p className="text-sm text-gray-700">
+            All right reserved &copy; Nkelego
+          </p>
+        </div>
       </div>
     </>
   );

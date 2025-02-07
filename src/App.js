@@ -16,8 +16,8 @@ function App() {
       description:
         "My portifolio, Show-casing my technological skills and projects in programming world",
       technologies: ["Reactjs", "Nodejs", "Tailwindcss"],
-      projectLink: "https://vercel.com/paulcavains-projects",
-      githubLink: "https://github.com/Paul-Cavain",
+      projectLink: "https://nkelegome.vercel.app/",
+      githubLink: "https://github.com/Paul-Cavain/myPortifolio",
     },
     {
       id: 2,
@@ -25,8 +25,8 @@ function App() {
       title: "Logistic Transport",
       description: "This is Laravel project",
       technologies: ["Laravel", "Vite", "Tailwindcss"],
-      projectLink: "https://vercel.com/paulcavains-projects",
-      githubLink: "https://github.com/Paul-Cavain",
+      projectLink: "#",
+      githubLink: "https://github.com/Paul-Cavain/code-crafters",
     },
     {
       id: 3,
@@ -35,18 +35,18 @@ function App() {
       description:
         "An exercise portifolio project under Codesoft Ltd, as part of frontend web development journey in Codesoft",
       technologies: ["HTML", "CSS", "Flexbox"],
-      projectLink: "https://vercel.com/paulcavains-projects",
-      githubLink: "https://github.com/Paul-Cavain",
+      projectLink: "#",
+      githubLink: "https://github.com/Paul-Cavain/Portfolio",
     },
     {
       id: 4,
       image: "./assets/images/NTF.jpg",
-      title: "NTF-Preview Card",
+      title: "NFT-Preview Card",
       description:
         "An exercise frontend project under Frontend Mentors part of frontend web development journey",
       technologies: ["HTML", "CSS", "Flexbox"],
-      projectLink: "https://vercel.com/paulcavains-projects",
-      githubLink: "https://github.com/Paul-Cavain",
+      projectLink: "https://nft-preview-card-5uc2.vercel.app/",
+      githubLink: "https://github.com/Paul-Cavain/NFT-preview-card",
     },
     {
       id: 5,
@@ -55,8 +55,8 @@ function App() {
       description:
         "A react project as a learning path from Ultimate course in udemy academy",
       technologies: ["Reactjs", "Tailwindcss", "Vercel"],
-      projectLink: "https://vercel.com/paulcavains-projects",
-      githubLink: "https://github.com/Paul-Cavain",
+      projectLink: "https://travel-list-eta-ten.vercel.app/",
+      githubLink: "https://github.com/Paul-Cavain/travel-list",
     },
   ];
   return (

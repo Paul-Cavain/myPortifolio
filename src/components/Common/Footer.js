@@ -1,5 +1,4 @@
-import { BsDribbble, BsStopwatch } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import SocialIconsFooter from "../../pages/PortifolioPages/SocialIconsFooter";
 
 const Footer = () => {
   return (
@@ -9,48 +8,7 @@ const Footer = () => {
           <h2>All right reserved &copy; PauloNkelego</h2>
         </div>
         <div>
-          <ul className="flex flex-row justify-center items-center space-x-3 md:space-x-4">
-            <a
-              href="https://twitter.com/Cavain_tz"
-              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
-            >
-              <li>
-                <FaTwitter />
-              </li>
-            </a>
-            <a
-              href="https://github.com/Paul-Cavain"
-              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
-            >
-              <li>
-                <FaGithub />
-              </li>
-            </a>
-            <a
-              href="https://dribbble.com/cavaincodez"
-              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
-            >
-              <li>
-                <BsDribbble />
-              </li>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/paul-cavain-7511b5304/"
-              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
-            >
-              <li>
-                <FaLinkedinIn />
-              </li>
-            </a>
-            <a
-              href="https://wakatime.com/@CavainCoder"
-              className="text-white hover:ring-2 bg-black hover:ring-red-500 hover:text-black hover:bg-white transition-all ease-out duration-500 rounded-full p-2"
-            >
-              <li>
-                <BsStopwatch />
-              </li>
-            </a>
-          </ul>
+          <SocialIconsFooter />
         </div>
       </footer>
     </>
