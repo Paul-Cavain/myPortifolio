@@ -38,25 +38,25 @@ const ContactInfo = () => {
       <div className="flex flex-row text-xl mt-10 md:mt-20 space-x-6">
         <Link
           to="https://github.com/Paul-Cavain"
-          className="hover:ring-2 bg-red-500 hover:ring-white rounded-full p-3"
+          className="text-white hover:text-black hover:bg-white ring-1 ring-white hover:ring-1 bg-black hover:ring-white rounded-full p-3"
         >
           <BsGithub />
         </Link>
         <Link
           to=""
-          className="hover:ring-2 bg-red-500 hover:ring-white rounded-full p-3"
+          className="text-white hover:text-black hover:bg-white ring-1 ring-white hover:ring-1 bg-black hover:ring-white rounded-full p-3"
         >
           <BsLinkedin />
         </Link>
         <Link
           to="https://twitter.com/Cavain_tz"
-          className="hover:ring-2 bg-red-500 hover:ring-white rounded-full p-3"
+          className="text-white hover:text-black hover:bg-white ring-1 ring-white hover:ring-1 bg-black hover:ring-white rounded-full p-3"
         >
           <BsTwitter />
         </Link>
         <Link
           to="https://twitter.com/Cavain_tz"
-          className="hover:ring-2 bg-red-500 hover:ring-white rounded-full p-3"
+          className="text-white hover:text-black hover:bg-white ring-1 ring-white hover:ring-1 bg-black hover:ring-white rounded-full p-3"
         >
           <BsStopwatch />
         </Link>
