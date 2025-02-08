@@ -5,11 +5,11 @@ const Profile = ({ projects }) => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center md:gap-20 pt-8 md:pt-20 px-6 md:px-0">
       {/* Profile Image */}
-      <div className="flex justify-center md:w-1/3">
+      <div className="flex justify-center w-full md:w-1/3">
         <img
           src="/assets/images/profile3.png"
           alt="Paulo Nkelego"
-          className="rounded-full ring-1 ring-gray-300 w-80 h-80 object-cover"
+          className="rounded-full ring-1 ring-gray-300 w-64 h-64 md:w-80 md:h-80 object-cover"
         />
       </div>
 
