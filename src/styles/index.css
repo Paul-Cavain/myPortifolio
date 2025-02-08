@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Kode+Mono:wght@400..700&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+AU+SA:wght@100..400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +15,7 @@
 
 .jersey-15-regulary {
   font-family: "Jersey 15", serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 

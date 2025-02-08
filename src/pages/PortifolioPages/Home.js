@@ -18,12 +18,12 @@ const Home = () => {
           {/* Text Section */}
           <div className="w-full md:w-1/2 pt-32">
             <div className="text-center md:text-start">
-              <h2 className="text-2xl md:text-3xl jersey-15-regular ">
+              <h2 className="text-2xl md:text-3xl jersey-15-regulary md:jersey-15-regular">
                 I'm PauloNkelego
               </h2>
             </div>
             <div className="mt-3 md:mt-5 text-md md:text-lg">
-              <div className="px-3 md:px-0 break-all jersey-15-regulary">
+              <div className="px-3 md:px-0 break-all jersey-15-regulary md:jersey-15-regular">
                 <p>
                   Hi, I am Paulo Nkelego, a software engineer passionate about
                   building efficient and scalable software systems. Here, I
@@ -36,28 +36,28 @@ const Home = () => {
               <div className="text-black mt-12 md:mt-8 flex justify-center md:justify-start text-2xl space-x-6">
                 <a href="https://github.com/Paul-Cavain">
                   <FaGithub
-                    className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10"
+                    className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black"
                     size={35}
                   />
                 </a>
                 <a href="https://twitter.com/Cavain_tz">
-                  <FaTwitter className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10" />
+                  <FaTwitter className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black" />
                 </a>
                 <a href="https://dribbble.com/cavaincodez">
                   <FaDribbble
-                    className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10"
+                    className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black"
                     size={35}
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/paul-cavain-7511b5304/">
                   <FaLinkedin
-                    className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10"
+                    className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black"
                     size={35}
                   />
                 </a>
                 <a href="https://wakatime.com/@CavainCoder">
                   <FaClock
-                    className="text-white bg-black hover:bg-red-400 rounded-full p-2 size-10"
+                    className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black"
                     size={35}
                   />
                 </a>
@@ -69,7 +69,7 @@ const Home = () => {
                   <button
                     type="button"
                     name="download_cv"
-                    className="text-white bg-black h-12 w-32 rounded-md mt-9 md:mt-8 transition ease-out duration-500 hover:bg-white hover:text-black hover:border-2 hover:border-red-500"
+                    className="text-white bg-black h-12 w-32 rounded-md mt-9 md:mt-8 transition ease-out duration-500 hover:bg-white hover:text-black hover:ring-1 hover:ring-black"
                   >
                     Download CV
                   </button>
@@ -82,7 +82,7 @@ const Home = () => {
           <div className="flex flex-wrap justify-center w-full md:w-1/2">
             <div className="px-10 md:mt-3 md:w-3/4">
               <img
-                src="/assets/images/profile.jpg"
+                src="/assets/images/profile3.png"
                 alt="Paulo Nkelego"
                 className="mt-20 mb-40 rounded-full ring-1 ring-gray-300 object-cover"
               />
@@ -103,7 +103,7 @@ const Home = () => {
               <button
                 type="button"
                 name="submit"
-                className="w-32 h-12 mt-6 rounded-md text-white bg-black transition ease-out duration-500 hover:bg-white hover:text-black hover:border-2 hover:border-red-500 hover:text-semibold"
+                className="w-32 h-12 mt-6 rounded-md text-white bg-black transition ease-out duration-500 hover:bg-white hover:text-black hover:ring-1 hover:ring-black hover:text-semibold"
               >
                 Let's Talk
               </button>

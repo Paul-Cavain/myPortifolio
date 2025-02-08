@@ -9,7 +9,7 @@ const Services = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-center md:space-x-4 space-y-4 md:space-y-0 md:mt-10">
-        <div className="relative bg-black py-16 mt-4 md:mt-0 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:border-2 hover:border-red-500 transition-all duration-700 ease-out">
+        <div className="relative bg-black py-16 mt-4 md:mt-0 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:ring-1 hover:ring-black transition-all duration-700 ease-out">
           <div className="front-content">
             <div className="flex justify-center">
               <FaFigma className="text-3xl" />
@@ -27,7 +27,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="relative bg-black py-16 mt-16 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:border-2 hover:border-red-500 transition-all duration-700 ease-out">
+        <div className="relative bg-black py-16 mt-16 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:ring-1 hover:ring-black transition-all duration-700 ease-out">
           <div className="front-content">
             <div className="flex justify-center">
               <FaReact className="text-3xl" />
@@ -46,7 +46,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="relative bg-black py-16 mt-16 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:border-2 hover:border-red-500 transition-all duration-700 ease-out">
+        <div className="relative bg-black py-16 mt-16 w-full rounded-md text-white transform hover:translate-x-1 card hover:bg-white hover:text-black hover:ring-1 hover:ring-black transition-all duration-700 ease-out">
           <div className="front-content">
             <div className="flex justify-center">
               <FaMobile className="text-2xl" />

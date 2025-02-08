@@ -1,7 +1,10 @@
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const MobileNav = () => {
+  const location = useLocation();
+  const activeLink = location.pathname;
   const [menuOpen, stMenuOpen] = useState(false);
   const handleNav = () => {
     stMenuOpen(!menuOpen);
@@ -39,7 +42,11 @@ const MobileNav = () => {
             <a href="/">
               <li
                 onClick={() => stMenuOpen(false)}
-                className="py-4 cursor-pointer"
+                className={`py-4 cursor-pointer ${
+                  activeLink === "/"
+                    ? "text-red-500 font-light"
+                    : "hover:bg-white text-black hover:text-black font-light"
+                }`}
               >
                 Home
               </li>
@@ -47,7 +54,11 @@ const MobileNav = () => {
             <a href="/About">
               <li
                 onClick={() => stMenuOpen(false)}
-                className="py-4 cursor-pointer"
+                className={`py-4 cursor-pointer ${
+                  activeLink === "/About"
+                    ? "text-red-500 font-light"
+                    : "hover:bg-white text-black hover:text-black font-light"
+                }`}
               >
                 About Me
               </li>
@@ -55,7 +66,11 @@ const MobileNav = () => {
             <a href="/Works">
               <li
                 onClick={() => stMenuOpen(false)}
-                className="py-4 cursor-pointer"
+                className={`py-4 cursor-pointer ${
+                  activeLink === "/Works"
+                    ? "text-red-500 font-light"
+                    : "hover:bg-white text-black hover:text-black font-light"
+                }`}
               >
                 Works
               </li>
@@ -63,7 +78,11 @@ const MobileNav = () => {
             <a href="/Contacts">
               <li
                 onClick={() => stMenuOpen(false)}
-                className="py-4 cursor-pointer"
+                className={`py-4 cursor-pointer ${
+                  activeLink === "/Contacts"
+                    ? "text-red-500 font-light"
+                    : "hover:bg-white text-black hover:text-black font-light"
+                }`}
               >
                 Contacts
               </li>

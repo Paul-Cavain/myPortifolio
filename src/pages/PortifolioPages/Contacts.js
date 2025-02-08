@@ -1,3 +1,4 @@
+import ArrowScroll from "./ArrowScroll";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
 
@@ -15,6 +16,9 @@ const Contacts = () => {
 
           {/* form to fill */}
           <ContactForm />
+        </div>
+        <div className="flex md:hidden">
+          <ArrowScroll />
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ const ArrowScroll = () => {
   return (
     <div
       ref={arrowRef}
-      className="fixed bottom-1 md:bottom-24 right-4 md:right-10 cursor-pointer text-xl text-white bg-black rounded-full p-2 shadow hover:ring-2 hover:ring-red-500 hover:bg-white hover:text-black transition-all ease-out duration-500"
+      className="fixed bottom-1 md:bottom-24 right-4 md:right-10 cursor-pointer text-xl text-white bg-black rounded-full p-2 shadow hover:ring-1 hover:ring-black hover:bg-white hover:text-black transition-all ease-out duration-500"
       onClick={handleClick}
     >
       <FaArrowUp />

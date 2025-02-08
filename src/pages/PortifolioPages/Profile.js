@@ -7,9 +7,9 @@ const Profile = ({ projects }) => {
       {/* Profile Image */}
       <div className="flex justify-center md:w-1/3">
         <img
-          src="/assets/images/profile.jpg"
+          src="/assets/images/profile3.png"
           alt="Paulo Nkelego"
-          className="rounded-full w-80 h-80 object-cover"
+          className="rounded-full ring-1 ring-gray-300 w-80 h-80 object-cover"
         />
       </div>
 
@@ -52,7 +52,7 @@ const Profile = ({ projects }) => {
               <button
                 type="button"
                 name="download_cv"
-                className="text-white bg-black h-12 w-40 rounded-md transition duration-300 hover:bg-white hover:text-black hover:border-2 hover:border-red-500"
+                className="text-white bg-black h-12 w-fit px-6 rounded-md transition duration-300 hover:bg-white hover:text-black hover:ring-1 hover:ring-black"
               >
                 Download CV
               </button>
