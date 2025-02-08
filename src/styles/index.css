@@ -12,15 +12,3 @@
 .card:hover .hover-content {
   opacity: 1; /* Show the hover content on hover */
 }
-
-.jersey-15-regulary {
-  font-family: "Jersey 15", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.jersey-15-regular {
-  font-family: "Jersey 15", serif;
-  font-weight: 600;
-  font-style: normal;
-}
