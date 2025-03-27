@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import MobileNav from "./MobileNav";
 
-const Navbar = () => {
+const Header = () => {
   const location = useLocation();
   const activeLink = location.pathname;
 
@@ -79,4 +79,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

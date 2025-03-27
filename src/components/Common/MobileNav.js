@@ -75,6 +75,18 @@ const MobileNav = () => {
                 Works
               </li>
             </a>
+            <a href="/Testimonies">
+              <li
+                onClick={() => stMenuOpen(false)}
+                className={`py-4 cursor-pointer ${
+                  activeLink === "/Testimonies"
+                    ? "text-red-500 font-light"
+                    : "hover:bg-white text-black hover:text-black font-light"
+                }`}
+              >
+                Testimonies
+              </li>
+            </a>
             <a href="/Contacts">
               <li
                 onClick={() => stMenuOpen(false)}

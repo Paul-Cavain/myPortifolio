@@ -1,20 +1,15 @@
 import React from "react";
 import resume from "../../resume.pdf";
 import ArrowScroll from "./ArrowScroll";
-import {
-  FaTwitter,
-  FaGithub,
-  FaLinkedin,
-  FaDribbble,
-  FaClock,
-} from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
+import { BsStopwatch } from "react-icons/bs";
 
 const Home = () => {
   return (
     <>
       <div className="home w-full px-4 md:px-28 pb-32 md:pb-36">
         {/* Introduction Section */}
-        <div className="flex flex-col md:flex-row w-full h-screen md:pt-32">
+        <div className="flex flex-col md:flex-row w-full h-screen md:pt-24">
           {/* Text Section */}
           <div className="w-full md:w-1/2 pt-32">
             <div className="text-center md:text-start">
@@ -33,43 +28,40 @@ const Home = () => {
                 </p>
               </div>
               {/* Social Icons */}
-              <div className="text-black mt-12 md:mt-8 flex justify-center md:justify-start text-2xl space-x-6">
+              <div className="text-black mt-12 md:mt-10 flex justify-center md:justify-start text-2xl space-x-6">
                 <a href="https://github.com/Paul-Cavain">
-                  <FaGithub
-                    className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black"
-                    size={35}
-                  />
+                  <FaGithub className="text-white bg-black hover:text-black hover:bg-white rounded-md p-2 size-9 hover:ring-1 hover:ring-black" />
                 </a>
                 <a href="https://twitter.com/Cavain_tz">
-                  <FaTwitter className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black" />
+                  <FaTwitter className="text-white bg-black hover:text-black hover:bg-white rounded-md p-2 size-9 hover:ring-1 hover:ring-black" />
                 </a>
                 <a href="https://dribbble.com/cavaincodez">
                   <FaDribbble
-                    className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black"
+                    className="text-white bg-black hover:text-black hover:bg-white rounded-md p-2 size-9 hover:ring-1 hover:ring-black"
                     size={35}
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/paul-cavain-7511b5304/">
                   <FaLinkedin
-                    className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black"
+                    className="text-white bg-black hover:text-black hover:bg-white rounded-md p-2 size-9 hover:ring-1 hover:ring-black"
                     size={35}
                   />
                 </a>
                 <a href="https://wakatime.com/@CavainCoder">
-                  <FaClock
-                    className="text-white bg-black hover:text-black hover:bg-white rounded-full p-2 size-10 hover:ring-1 hover:ring-black"
+                  <BsStopwatch
+                    className="text-white bg-black hover:text-black hover:bg-white rounded-md p-2 size-9 hover:ring-1 hover:ring-black"
                     size={35}
                   />
                 </a>
               </div>
 
               {/* Download CV Button */}
-              <div className="flex justify-center md:justify-start">
+              <div className="flex justify-center md:justify-start mt-9 md:mt-14">
                 <a href={resume} download={"Paulo Nkelego Resume"}>
                   <button
                     type="button"
                     name="download_cv"
-                    className="text-white bg-black h-12 w-32 rounded-md mt-9 md:mt-8 transition ease-out duration-500 hover:bg-white hover:text-black hover:ring-1 hover:ring-black"
+                    className="text-white bg-black w-fit px-6 py-3 rounded-md transition ease-out duration-500 hover:bg-white hover:text-black hover:ring-1 hover:ring-black"
                   >
                     Download CV
                   </button>
@@ -91,19 +83,19 @@ const Home = () => {
         </div>
 
         {/* Call to Action Section */}
-        <div className="w-full text-center mt-44 md:mt-0">
+        <div className="w-full text-center mt-44 md:mt-4">
           <h3 className="text-2xl md:text-4xl">
             Interested in Working Together With Me?
           </h3>
           <p className="mt-6 text-md md:text-xl">
             I Will Surely Show You How I Turn Your Idea Into The Amazing One
           </p>
-          <div>
+          <div className="md:mt-3">
             <a href="./Contacts">
               <button
                 type="button"
                 name="submit"
-                className="w-32 h-12 mt-6 rounded-md text-white bg-black transition ease-out duration-500 hover:bg-white hover:text-black hover:ring-1 hover:ring-black hover:text-semibold"
+                className="w-fit px-8 py-3 mt-6 rounded-md text-white bg-black transition ease-out duration-500 hover:bg-white hover:text-black hover:ring-1 hover:ring-black hover:text-semibold"
               >
                 Let's Talk
               </button>
