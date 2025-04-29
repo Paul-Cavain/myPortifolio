@@ -20,7 +20,7 @@ const Services = () => {
           </div>
           <div className="hover-content absolute top-0 left-0 w-full h-full bg-opacity-80 hover:text-black text-white p-4 opacity-0 transition-opacity duration-300">
             {/* New content to be displayed on hover */}
-            <h3 className="text-xl">Special Design Offer</h3>
+            <h3 className="text-xl">Special Design</h3>
             <p className="mt-4">
               Get 50% off on website design projects this month!
             </p>

@@ -8,8 +8,9 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
-  FaAndroid,
   FaFigma,
+  FaNode,
+  FaLeaf,
 } from "react-icons/fa";
 
 const Skills = () => {
@@ -96,7 +97,7 @@ const Skills = () => {
                 <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
                   <FaReact className="text-3xl mt-1" />
                   <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
-                    React
+                    ReactJs
                   </span>
                 </div>
               </a>
@@ -114,9 +115,9 @@ const Skills = () => {
             <div className="mt-4">
               <a href="https://flutter.dev/">
                 <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
-                  <FaAndroid className="text-3xl mt-1" />
+                  <FaNode className="text-3xl mt-1" />
                   <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
-                    Flutter
+                    ExpressJs
                   </span>
                 </div>
               </a>
@@ -128,9 +129,9 @@ const Skills = () => {
           <div className="mt-4">
             <a href="https://www.figma.com/">
               <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
-                <FaFigma className="text-3xl mt-1" />
+                <FaLeaf className="text-3xl mt-1" />
                 <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
-                  Figma
+                  MongoDB
                 </span>
               </div>
             </a>
@@ -138,9 +139,9 @@ const Skills = () => {
           <div className="mt-4">
             <a href="https://flutter.dev/">
               <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
-                <FaAndroid className="text-3xl mt-1" />
+                <FaReact className="text-3xl mt-1" />
                 <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
-                  Flutter
+                  React Native
                 </span>
               </div>
             </a>
@@ -155,6 +156,20 @@ const Skills = () => {
               </div>
             </a>
           </div>
+        </div>
+
+        <div className="flex flex-col">
+          <div className="mt-4">
+            <a href="https://www.figma.com/">
+              <div className="bg-white flex flex-row space-x-4 w-64 md:w-40 px-1 py-1 h-12 rounded-lg border-2 border-black">
+                <FaFigma className="text-3xl mt-1" />
+                <span className="bg-gray-400 hover:bg-black hover:text-white w-56 md:w-32 px-2 py-1 rounded-r-md transition-all ease-out duration-500">
+                  Figma
+                </span>
+              </div>
+            </a>
+          </div>
+          
         </div>
       </div>
     </div>
