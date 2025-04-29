@@ -17,7 +17,7 @@ const Works = ({ projects }) => {
             <img
               src={project.image}
               alt="project-image"
-              className="h-[24vh] md:h-[30vh] w-full object-cover"
+              className="h-[24vh] md:h-[30vh] w-full object-cover hover:animate-pulse"
             />
             <div className="p-4">
               <p className="text-lg font-semibold flex flex-row justify-between items-center">

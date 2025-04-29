@@ -14,7 +14,7 @@ const Header = () => {
             <h1
               className={`transition ease-linear duration-500 p-2.5 rounded ${
                 activeLink === "/"
-                  ? "text-red-500 font-light"
+                  ? "text-red-500 font-light text-xl"
                   : "hover:bg-white hover:text-black font-light"
               }`}
             >

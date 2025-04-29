@@ -7,8 +7,14 @@ import Works from "./pages/PortifolioPages/Works";
 import Contacts from "./pages/PortifolioPages/Contacts";
 import Testimonies from "./pages/PortifolioPages/Testimonies";
 import AdminDashboard from "./pages/AdminPages/AdminDashboard";
+import { useLocation } from "react-router-dom";
 
 function App() {
+
+  // Inside your component:
+const location = useLocation();
+const isAdminDashboard = location.pathname === "/AdminDashboard";
+
   const projects = [
     {
       id: 1,
@@ -41,7 +47,7 @@ function App() {
     },
     {
       id: 4,
-      image: "./assets/images/screenshot.png",
+      image: "./assets/images/age.png",
       title: "Age Calculator",
       description:
         "An exercise portifolio project under Codesoft Ltd, as part of frontend web development journey in Codesoft",
@@ -82,30 +88,34 @@ function App() {
 
   const testimonials = [
     {
-      name: "PAUL JENNIES",
-      src: "/assets/images/profile3.png",
+      name: "FRANKLIN SAINT",
+      status: "Amazon Programmer",
+      src: "/assets/images/passport2.png",
       alt: "Image 1",
       description:
-        "We're proud to say that most of our new business comes from referrals.  Our clients are our partners, and forming long-lasting relationships is always our goal.  See what some of our clients are saying about working with Team NPG",
+        '"We are proud to say that most of our new business comes from referrals.  Our clients are our partners, and forming long-lasting relationships is always our goal.  See what some of our clients are saying about working with Team NPG."',
     },
     {
-      name: "MARY SMIT",
-      src: "/assets/images/foox.jr.png",
+      name: "JEROME ALISON",
+      status: "Capital Space Manager",
+      src: "/assets/images/passport4.png",
       alt: "Image 2",
       description:
-        "NPG has been a great asset to our team, with bigger concepts like helping us build our brand and then also with everyday tasks such as creating social graphics and building our online presence. Would definitely recommend their team to companies who are looking to grow their business!",
+        '"NPG has been a great asset to our team, with bigger concepts like helping us build our brand and then also with everyday tasks such as creating social graphics and building our online presence. Would definitely recommend their team to companies who are looking to grow their business!"',
     },
     {
-      name: "BEN POL",
-      src: "/assets/images/foox.jr3.png",
+      name: "MARRISON BUCKLEY",
+      status: "Apple Executive Manager",
+      src: "/assets/images/passport3.png",
       alt: "Image 3",
       description:
-        "I have built over a dozen websites with nearly a dozen different developers and web shops. The experience building my latest website with NPG was possibly the best I've ever had. From the proposal to the launch, they were honest, competent and thorough. I truly felt like I had a partner in building my website with NPG as opposed to just a vendor.!",
+        '"I have built over a dozen websites with nearly a dozen different developers and web shops. The experience building my latest website with NPG was possibly the best I have ever had. From the proposal to the launch, they were honest, competent and thorough!"',
     },
   ];
+
   return (
     <div className="App">
-      <Navbar />
+      {!isAdminDashboard && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About projects={projects} />} />
@@ -118,7 +128,7 @@ function App() {
         <Route path="/Contacts" element={<Contacts />} />
         <Route path="/AdminDashboard" element={<AdminDashboard />} />
       </Routes>
-      <Footer />
+      {!isAdminDashboard && <Footer />}
     </div>
   );
 }
