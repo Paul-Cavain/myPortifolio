@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { LayoutDashboard, Settings, Menu } from "lucide-react";
+import { LayoutDashboard, Settings, Menu, Mail } from "lucide-react";
+import { BsPersonAdd } from "react-icons/bs";
 
 const Sidebar = ({ collapsed, onToggle, onOpen }) => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Sidebar = ({ collapsed, onToggle, onOpen }) => {
   return (
     <div
       className={`${
-        collapsed ? "w-32" : "w-64"
+        collapsed ? "w-32" : "w-52"
       } bg-white shadow-md h-full px-4 py-6 relative transition-all duration-300`}
     >
       <div className="flex justify-between items-center mb-6">
@@ -45,7 +46,7 @@ const Sidebar = ({ collapsed, onToggle, onOpen }) => {
       {/* Menu */}
       <nav className="space-y-6 mt-6">
         <button
-          onClick={() => handleNavClick("/AdminDashboard")}
+          onClick={() => handleNavClick("/Dashboard")}
           className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 w-full"
         >
           <LayoutDashboard className="w-6 h-6" />
@@ -53,7 +54,22 @@ const Sidebar = ({ collapsed, onToggle, onOpen }) => {
         </button>
 
         <button
-          onClick={() => handleNavClick("/AdminSettings")}
+          onClick={() => handleNavClick("/Messages")}
+          className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 w-full"
+        >
+          <Mail className="w-6 h-6" />
+          {!collapsed && <span>Messages</span>}
+        </button>
+        <button
+          onClick={() => handleNavClick("/Profiles")}
+          className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 w-full"
+        >
+          <BsPersonAdd className="w-6 h-6" />
+          {!collapsed && <span>Profles</span>}
+        </button>
+
+        <button
+          onClick={() => handleNavClick("/Settings")}
           className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 w-full"
         >
           <Settings className="w-6 h-6" />

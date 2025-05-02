@@ -8,12 +8,18 @@ import Contacts from "./pages/PortifolioPages/Contacts";
 import Testimonies from "./pages/PortifolioPages/Testimonies";
 import AdminDashboard from "./pages/AdminPages/AdminDashboard";
 import { useLocation } from "react-router-dom";
+import Settings from "./pages/AdminPages/Settings";
+import Profiles from "./pages/AdminPages/Profiles";
+import Messages from "./pages/AdminPages/Messages";
 
 function App() {
 
   // Inside your component:
 const location = useLocation();
-const isAdminDashboard = location.pathname === "/AdminDashboard";
+const isDashboard = location.pathname === "/Dashboard";
+const isSettings = location.pathname === "/Settings";
+const isProfiles = location.pathname === "/Profiles";
+const isMessages = location.pathname === "/Messages";
 
   const projects = [
     {
@@ -93,7 +99,7 @@ const isAdminDashboard = location.pathname === "/AdminDashboard";
       src: "/assets/images/passport2.png",
       alt: "Image 1",
       description:
-        '"We are proud to say that most of our new business comes from referrals.  Our clients are our partners, and forming long-lasting relationships is always our goal.  See what some of our clients are saying about working with Team NPG."',
+        '"We are proud to say that most of our new business comes from referrals. Our clients are our partners, and forming long-lasting relationships is always our goal. See what some of our clients are saying about working with Team NPG for the goo dof the company and everyone around the society."',
     },
     {
       name: "JEROME ALISON",
@@ -115,7 +121,7 @@ const isAdminDashboard = location.pathname === "/AdminDashboard";
 
   return (
     <div className="App">
-      {!isAdminDashboard && <Navbar />}
+      {(!isDashboard && !isSettings && !isProfiles && !isMessages) && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About projects={projects} />} />
@@ -126,9 +132,12 @@ const isAdminDashboard = location.pathname === "/AdminDashboard";
         ~
         <Route path="/Works" element={<Works projects={projects} />} />
         <Route path="/Contacts" element={<Contacts />} />
-        <Route path="/AdminDashboard" element={<AdminDashboard />} />
+        <Route path="/Dashboard" element={<AdminDashboard />} />
+        <Route path="/Settings" element={<Settings />} />
+        <Route path="/Profiles" element={<Profiles />} />
+        <Route path="/Messages" element={<Messages />} />
       </Routes>
-      {!isAdminDashboard && <Footer />}
+      {(!isDashboard && !isSettings && !isProfiles && !isMessages) && <Footer />}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
+import Overviews from "./Overviews";
 
 const AdminDashboard = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -10,7 +11,9 @@ const AdminDashboard = ({ children }) => {
   return (
     <div className="flex h-screen bg-gray-100">
       <Sidebar collapsed={collapsed} onToggle={toggleSidebar} onOpen={openSidebar} />
-      <div className="flex-1 overflow-auto p-6">{children}</div>
+      <div className="flex-1 overflow-auto p-6">
+        <Overviews collapsed={collapsed} />
+      </div>
     </div>
   );
 };
